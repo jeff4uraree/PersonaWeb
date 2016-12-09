@@ -6,5 +6,27 @@ This is a project to create a web services for players of the game Shin Megami T
 
 * 2 Persona fusion (IN PROGRESS)
 * 3 Persona fusion (BACKLOG)
-* cross - penta special fusions (BACKLOG)
+* cross, penta, and hexa special fusions (BACKLOG)
+
+# How to Use
+For now the user will enter the names of the personas they wish to find the fusion outcome for.
+There are 3 inputs currently.  To get ready for the first feature which will be 2 persona fusion, only two of the inputs will currently be involved.
+
+# TODO:
+
+* Add sql query for 2 persona fusion
+
+# DONE:
+* Created webpage template
+* Created java beans for persona object and bean configurations files
+* Added mysql db connection
+
+# TECHNOLOGIES USED
+
+* Java
+* Spring
+* MySQL
+* Log4j
+* Tomcat
+
 
