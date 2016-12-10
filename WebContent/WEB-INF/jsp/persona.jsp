@@ -1,11 +1,14 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <html>
 <head>
-    <title>Spring MVC Form Handling</title>
+    <title>Persona Fusion Table Calculator</title>
 </head>
 <body>
 
-<h2>Student Information</h2>
+<h2>Persona Fusion Calculator</h2>
+
+<p>Please enter the names of the personas you wish to fuse: </p>
+
 <form:form method="POST" action="/PersonaWeb/addPersona">
    <table>
     <tr>

@@ -5,11 +5,19 @@
 </head>
 <body>
 
-<h2>Submitted Student Information</h2>
+<h2>Your outcome persona is: </h2>
    <table>
     <tr>
-        <td>Output Persona</td>
-        <td>${outputPersona}</td>
+        <td>Output Persona: </td>
+        <td>${outputPersonaName}</td>
+    </tr>
+    <tr>
+        <td>Output Persona Arcana: </td>
+        <td>${outputPersonaArcana}</td>
+    </tr>
+    <tr>
+        <td>Output Persona base level: </td>
+        <td>${outputPersonaLevel}</td>
     </tr>
 </table>  
 </body>

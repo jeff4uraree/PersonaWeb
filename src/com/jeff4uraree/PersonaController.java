@@ -28,9 +28,19 @@ public class PersonaController {
 					new ClassPathXmlApplicationContext("Beans.xml");
 	      
 	      DBInit dbinit = (DBInit) context.getBean("dbInit");
-	      OutputPersona outputPersona = dbinit.findPersonaByName(persona.getPersona1());
+	      OutputPersona outputPersona1 = dbinit.findPersonaByName(persona.getPersona1());
+	      OutputPersona outputPersona2 = dbinit.findPersonaByName(persona.getPersona2());
+	      OutputPersona outcomePersona = dbinit.findPersonaFusionTwoWay(outputPersona1.getPersonaName(), outputPersona2.getPersonaName());
+	      //OutputArcana outputArcana = dbinit.findOutputArcana(outputPersona1.getArcanaType(), outputPersona2.getArcanaType());
 	      
-	      model.addAttribute("outputPersona", outputPersona.getPersonaName());
+	      
+	      //model.addAttribute("outputPersonaName", outputPersona1.getPersonaName());
+	      //model.addAttribute("outputPersonaArcana", outputArcana.getArcana());
+	      //model.addAttribute("outputPersonaLevel", outputPersona1.getLevel());
+	      
+	      model.addAttribute("outputPersonaName", outcomePersona.getPersonaName());
+	      model.addAttribute("outputPersonaArcana", outcomePersona.getArcanaType());
+	      model.addAttribute("outputPersonaLevel", outcomePersona.getLevel());
 	      
 	      return "result";
 	}

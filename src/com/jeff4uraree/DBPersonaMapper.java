@@ -16,7 +16,8 @@ public class DBPersonaMapper implements RowMapper<OutputPersona>{
 		outputPersona.setPersonaID(rs.getInt("persona_id"));
 		outputPersona.setPersonaName(rs.getString("persona_name"));
 		//persona.setArcanaID(rs.getInt("arcana_id"));
-		//outputPersona.setArcanaType(rs.getString("arcana_name"));
+		outputPersona.setArcanaType(rs.getString("arcana"));
+		outputPersona.setLevel(rs.getInt("base_level"));
 		
 		return outputPersona;
 	}

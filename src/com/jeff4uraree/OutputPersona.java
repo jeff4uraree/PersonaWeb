@@ -6,6 +6,7 @@ public class OutputPersona {
 	private String personaName;
 	private Integer arcanaID;
 	private String arcanaType;
+	private Integer level;
 	
 	public Integer getPersonaID() {
 		return personaID;
@@ -30,5 +31,11 @@ public class OutputPersona {
 	}
 	public void setArcanaType(String arcanaType) {
 		this.arcanaType = arcanaType;
+	}
+	public Integer getLevel() {
+		return level;
+	}
+	public void setLevel(Integer level) {
+		this.level = level;
 	}
 }
