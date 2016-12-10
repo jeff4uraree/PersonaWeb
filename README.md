@@ -4,8 +4,8 @@ This is a project to create a web services for players of the game Shin Megami T
 
 # Features
 
-* 2 Persona fusion (IN PROGRESS)
-* 3 Persona fusion (BACKLOG)
+* 2 Persona fusion (DONE)
+* 3 Persona fusion (IN PROGRESS)
 * cross, penta, and hexa special fusions (BACKLOG)
 
 # How to Use
@@ -14,12 +14,13 @@ There are 3 inputs currently.  To get ready for the first feature which will be 
 
 # TODO:
 
-* Add sql query for 2 persona fusion
+* 3 way persona fusion
 
 # DONE:
 * Created webpage template
 * Created java beans for persona object and bean configurations files
 * Added mysql db connection
+* Add sql query for 2 persona fusion
 
 # TECHNOLOGIES USED
 
